@@ -1,0 +1,36 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>Login Form</title>
+        <link rel=stylesheet type="text/css" href="css/login_style.css">
+        
+    </head>
+    <body>
+        <div class="loginbox">
+            <img src="Images/login_icon.png" class="icon" class="image">
+            <h1>Login Here</h1>
+            <form>
+                <p>User Name</p>
+                <input type="text" id="txtUser" placeholder="Enter Username" required>
+                <p>Password</p>
+                <input type="password" id="txtPwd" placeholder="Enter Password" required>
+                <input type="submit" id="btnLogin" value="Login" onclick="validate_login()">
+                <a href="#">Lost Your Password</a><br>
+                <a href="#">Don't have Account?</a>
+            </form>
+        </div>
+        <script>
+            function validate_login(){
+                var username = document.getElementById("txtUser").value;
+                var password = document.getElementById("txtPwd").value;
+                if(username == "gaurav" && password == "12345"){
+                    document.write();
+                    window.location = "website.html";
+                    
+                }
+                
+            }
+            
+        </script>
+    </body>
+</html>
